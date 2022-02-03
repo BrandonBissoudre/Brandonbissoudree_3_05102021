@@ -187,20 +187,21 @@ input[type="button"] {
     border-radius: 8px;
     background: #f6f6f6;
     border: none;
-    box-shadow: 5px 5px 5px rgb(190, 190, 190);
+    box-shadow: 5px 5px 5px rgb(190 190 190);
     margin-bottom: 20px;
     padding-left: 70px;
+    align-items: center;
 }
 
 .fonctionnement-bouton1 {
     display: flex;
     border-radius: 8px;
-    background: #f5edff;
+    background: #f6f6f6;
     border: none;
-    box-shadow: 5px 5px 5px rgb(190, 190, 190);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    box-shadow: 5px 5px 5px rgb(190 190 190);
+    margin-bottom: 20px;
     padding-left: 70px;
+    align-items: center;
 }
 
 .fonctionnement-bouton1 p,
@@ -217,9 +218,7 @@ input[type="button"] {
     padding: 5px;
     color: white;
     width: 13px;
-    height: 8px;
     border-radius: 20px;
-    align-items: center;
     text-align: center;
     display: table;
     font-size: 10px;
@@ -227,13 +226,6 @@ input[type="button"] {
 
 .fa-store {
     color: #9356dc;
-}
-
-.fa-mobile-alt,
-.fa-list-ul,
-.fa-store {
-    position: relative;
-    top: 10px;
 }
 
 
