@@ -227,10 +227,9 @@ input[type="button"] {
     border: 0px solid white;
     border-radius: 20px;
     background-color: white;
-    max-width: 315px;
-    max-height: 235px;
     margin-bottom: 28px;
     box-shadow: 5px 5px 5px rgb(190, 190, 190);
+    width: 100%;
 }
 
 .lieu_contenu_1 {
@@ -239,10 +238,10 @@ input[type="button"] {
 
 .photo_restaurants {
     object-fit: cover;
-    width: 315px;
     height: 175px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 100%;
 }
 
 .container_item {
@@ -253,6 +252,8 @@ input[type="button"] {
 .titre_contenu h3 {
     padding-left: 10px;
     color: black;
+    padding-top: 5px;
+    margin-bottom: 0px
 }
 
 .lieu_contenu .fa-heart,
@@ -261,22 +262,12 @@ input[type="button"] {
     top: -40px;
     left: 260px;
     font-size: 25px;
-    padding: 0%;
-}
-
-
-/*Animation heart*/
-
-.fa-heart:hover {
-    background: linear-gradient(50deg, #ff79da, #9356dc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
+    color: black;
 }
 
 .titre_contenu span {
     position: relative;
-    bottom: 200px;
+    bottom: 190px;
     left: 235px;
     background-color: #99e2d0;
     padding: 5px;
@@ -290,7 +281,14 @@ input[type="button"] {
     margin-top: -19px;
 }
 
+/*Animation heart*/
 
+.fa-heart:hover {
+    background: linear-gradient(50deg, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
 
 /*Footer*/
 
@@ -722,7 +720,6 @@ h3 {
 
 @media (min-width: 1281px) {
     .container_item {
-        padding-left: 204px;
         column-count: 2;
         padding-bottom: 92px;
         padding-top: 50px;
@@ -735,7 +732,7 @@ h3 {
         position: relative;
         left: 503px;
     }
-    
+
     #Menu_restaurants {
         padding-left: 544px;
     }
