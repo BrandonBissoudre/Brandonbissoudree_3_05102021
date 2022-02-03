@@ -336,9 +336,10 @@ h4 {
 
 /*Haut page Menu */
 
-.image_resto {
-    display: flex;
-    height: 250px;
+.image_resto img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 440px;
 }
 
 #Menu_restaurants {
@@ -703,9 +704,7 @@ h3 {
     #Menu_restaurants {
         padding-left: 300px;
     }
-    .image_resto {
-        padding-left: 270px;
-    }
+    
     #fonctionnement {
         padding: 0 30vw 2vw 30vw;
     }
@@ -736,9 +735,7 @@ h3 {
         position: relative;
         left: 503px;
     }
-    .image_resto {
-        padding-left: 522px;
-    }
+    
     #Menu_restaurants {
         padding-left: 544px;
     }
