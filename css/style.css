@@ -716,7 +716,9 @@ h3 {
     }
 
     #Menu_restaurants {
-        padding-left: 300px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 
     #fonctionnement {
@@ -748,7 +750,9 @@ h3 {
     }
 
     #Menu_restaurants {
-        padding-left: 544px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 
     .button_commander {
