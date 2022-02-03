@@ -365,7 +365,7 @@ h4 {
 
 #Menu_restaurants {
     position: relative;
-    bottom: 40px;
+    bottom: 110px;
     background-color: #f6f6f6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -397,7 +397,6 @@ input[type="button_commander"] {
     padding: 12px;
     background: linear-gradient(50deg, #ff79da, #9356dc);
     color: white;
-    
     box-shadow: 5px 5px 5px rgb(190, 190, 190);
     text-align: center;
     font-weight: bold;
@@ -633,9 +632,9 @@ h3 {
 }
 
 .menu-wrapper:hover .check-icon-wrapper i {
-    -webkit-animation: rotate-in-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: rotate-in-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation-delay: 0.7s;
+    -webkit-animation: rotate-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: rotate-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.9s;
     color: white;
 }
 
@@ -655,17 +654,6 @@ h3 {
     }
 }
 
-@keyframes rotate-in-center {
-    0% {
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-}
 
 /*Animation Menu Fade */
 
