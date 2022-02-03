@@ -360,6 +360,9 @@ h4 {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 0 5vw 5vw 5vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 h5 {
@@ -715,12 +718,6 @@ h3 {
         left: 195px;
     }
 
-    #Menu_restaurants {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-
     #fonctionnement {
         padding: 0 30vw 2vw 30vw;
     }
@@ -747,17 +744,6 @@ h3 {
 
     .titre_reservez_menu p {
         left: 503px;
-    }
-
-    #Menu_restaurants {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .button_commander {
-        position: relative;
-        right: 255px;
     }
 
     #fonctionnement {
