@@ -440,11 +440,16 @@ input[type="button_commander"] {
     color: black;
 }
 
+.titre_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .titre_menu .fa-heart {
-    position: absolute;
-    top: 57px;
-    right: 40px;
+    display: grid;
     font-size: 25px;
+    justify-content: end;
 }
 
 .container-menu {
