@@ -37,6 +37,7 @@ body {
 
 /*Loader*/
 
+/*
 .loader_bg {
     position: fixed;
     z-index: 999999;
@@ -70,8 +71,9 @@ body {
 }
 
 .loader:before {
-    animation-delay: 0.5s;
+    animation-delay: 0.5s;  
 }
+
 
 @keyframes loader {
     0% {
@@ -88,6 +90,15 @@ body {
         opacity: 0;
     }
 }
+
+ TEST LOADER
+.loader_bg{
+    display: none;
+    opacity:0;
+    transition: 0.5s;
+}
+*/
+
 
 
 /*Header*/
