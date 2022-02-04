@@ -38,7 +38,7 @@ body {
 /*Loader*/
 
 
-.loader_bg {
+/*.loader_bg {
     position: fixed;
     z-index: 999999;
     background: #fff;
@@ -92,7 +92,7 @@ body {
 }
 
 .loader_bg ::before {
-    animation-delay: 0.5s;  
+    animation-delay: 0.5s;
 }
 
 
@@ -101,12 +101,8 @@ body {
         opacity: 1;
         display: none;
     }
-}
+}/*
  
-
-
-
-
 
 /*Header*/
 
