@@ -38,7 +38,7 @@ body {
 /*Loader*/
 
 
-/*.loader_bg {
+.loader_bg {
     position: fixed;
     z-index: 999999;
     background: #fff;
@@ -66,7 +66,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    animation: loader 2s linear infinite;
+    animation: loader 2s linear;
     opacity: 0;
 }
 
@@ -91,17 +91,23 @@ body {
     }
 }
 
-.loader_bg ::before {
-    animation-delay: 0.5s;
+.loader_bg {
+    animation:2s loader_bg forwards;
 }
 
 
 @keyframes loader_bg {
-    100% {
+
+    0% {
         opacity: 1;
-        display: none;
     }
-}/*
+
+
+    100% {
+        display: none;
+        z-index: -10;
+    }
+}
  
 
 /*Header*/
@@ -123,19 +129,21 @@ body {
     background-color: #eaeaea;
     display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .localisation .fa-map-marker-alt {
-    position: relative;
-    left: 110px;
-    top: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .localisation p {
     text-align: center;
-    margin: auto;
     padding: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #reservez_menu {
@@ -167,8 +175,6 @@ body {
 }
 
 
-/*revoir*/
-
 input[type="button"] {
     border-radius: 40px;
     padding: 15px;
@@ -176,6 +182,8 @@ input[type="button"] {
     color: white;
     border: none;
     box-shadow: 5px 5px 5px rgb(190, 190, 190);
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .bouton_explorer_restaurants :hover {
@@ -183,17 +191,32 @@ input[type="button"] {
 }
 
 
+
+
 /*Fonctionnement*/
 
-#fonctionnement {
-    padding: 0 5vw 5vw 5vw;
+.bouton_fonctionnement {
+    display: block;
+    position: static;
+    width: 262px;
 }
 
-.titre_fonctionnement p {
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px;
+    align-items: center;
+}
+
+.titre_fonctionnement h2 {
     font-weight: bold;
     font-size: 20px;
     padding: 20px;
     padding-left: 10px;
+    text-align: center;
 }
 
 .fonctionnement-bouton {
@@ -203,7 +226,7 @@ input[type="button"] {
     border: none;
     box-shadow: 5px 5px 5px rgb(190 190 190);
     margin-bottom: 20px;
-    padding-left: 70px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -214,11 +237,11 @@ input[type="button"] {
     border: none;
     box-shadow: 5px 5px 5px rgb(190 190 190);
     margin-bottom: 20px;
-    padding-left: 70px;
     align-items: center;
+    justify-content: center;
 }
 
-.fonctionnement-bouton1 :hover{
+.fonctionnement-bouton1:hover{
     background: #F5EDFF;
 }
 
@@ -231,8 +254,8 @@ input[type="button"] {
 .fonctionnement-bouton1 span,
 .fonctionnement-bouton span {
     background-color: #9356dc;
-    position: absolute;
-    left: 15px;
+    position: relative;
+    left: -36px;
     padding: 5px;
     color: white;
     width: 13px;
@@ -264,7 +287,6 @@ input[type="button"] {
     box-shadow: 5px 5px 5px rgb(190, 190, 190);
     width: 100%;
     height: 229px;
-    max-width: 462px;
 }
 
 .lieu_contenu_1 {
@@ -340,6 +362,7 @@ input[type="button"] {
     background-color: #353535;
     color: white;
     padding: 5vw;
+    display: grid;
 }
 
 .contact_mail a {
@@ -725,7 +748,6 @@ h3 {
 
 @media (min-width: 768px) and (max-width: 1281px) {
     .container_item {
-        padding-left: 30px;
         column-count: 2;
         padding-bottom: 92px;
         padding-top: 50px;
@@ -735,17 +757,12 @@ h3 {
         left: 195px;
     }
 
-    #fonctionnement {
-        padding: 0 30vw 2vw 30vw;
+    .box_carte{
+        max-width: 462px;
     }
 
-    .titre_fonctionnement p {
-        padding-left: 73px;
-    }
-
-    .fonctionnement-bouton1 span,
-    .fonctionnement-bouton span {
-        left: 235px;
+    #carte_restaurants{
+        display: flex;
     }
 }
 
@@ -766,16 +783,11 @@ h3 {
         left: 503px;
     }
 
-    #fonctionnement {
-        padding: 0 38vw 2vw 38vw;
+    .box_carte{
+        max-width: 462px;
     }
 
-    .titre_fonctionnement p {
-        padding-left: 78px;
-    }
-
-    .fonctionnement-bouton1 span,
-    .fonctionnement-bouton span {
-        left: 543px;
+    #carte_restaurants{
+        display: flex;
     }
 }
