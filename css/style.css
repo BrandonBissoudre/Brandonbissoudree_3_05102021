@@ -47,7 +47,7 @@ body {
 }
 
 .loader {
-    border: 0 soild transparent;
+    border: 0px soild transparent;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -249,17 +249,18 @@ input[type="button"] {
     background: #F5EDFF;
 }
 
-.store-logo:hover {
+.fonctionnement-bouton:hover .list-logo{
     color: #9356dc;
 }
 
-.list-logo:hover {
+.fonctionnement-bouton:hover .mobile-logo{
     color: #9356dc;
 }
 
-.mobile-logo:hover {
+.fonctionnement-bouton1:hover .fa-store{
     color: #9356dc;
 }
+
 
 .fonctionnement-bouton1 p,
 .fonctionnement-bouton p {
@@ -576,8 +577,12 @@ h3 {
 
 .menu:hover .menu-container {
     animation: slide-animate 1s;
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards; 
+}
+
+.menu .menu-container {
+    animation: slide-animate-out 0.3s;
+    animation-fill-mode: forwards; 
 }
 
 @keyframes slide-animate {
@@ -587,6 +592,16 @@ h3 {
 
     100% {
         width: 315px;
+    }
+}
+
+@keyframes slide-animate-out {
+    0% {
+        width: 315px;
+    }
+
+    100% {
+        width: 365px;
     }
 }
 
